@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --p-pale-blue: hsl(225, 100%, 94%);
+    --p-Bright-blue: hsl(245, 75%, 52%);
+
+    --n-Very-pale-blue: hsl(225, 100%, 98%);
+    --n-Desaturated-blue: hsl(224, 23%, 55%);
+    --n-Dark-blue: hsl(223, 47%, 23%);
+
+    --font1:  'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ /*---CORPO---*/
+body {
+    font-family:  'Red Hat Display', sans-serif;
+    background: url(images/pattern-background-desktop.svg);
+    background-color: var(--p-pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*--informação principal--*/
+
+/*--CONFIG DA INFOR PRINCIPAL*/
+.conteiner {
+    background-color: white;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 20px auto;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.conteiner img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.descricao {
+    color: var(--n-Desaturated-blue);
+    font-size: 0.9rem;
+    max-width: 80%;
+    font-weight: 500;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/*--CONFIG DO PLANO--*/
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--n-Very-pale-blue);
+    margin: auto;
+    padding: 1rem;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+.plan-infor {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.list-plan {
+    display: flex;
+}
+
+.title-plan {
+    font-weight: 700;
+}
+.plan-infor .preco {
+    color: var(--n-Desaturated-blue);
+}
+
+/*--CONIFG DOS BOTÕES--*/
+
+button {
+    font-weight: 700;
+    background: none;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button.bttn-proceed {
+    font-family: var(--font1);
+    color: white;
+    margin-top: 15px;
+    background-color: var(--p-Bright-blue);
+    width: 80%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.350);
+}
+button.bttn-proceed:hover {
+    transition: all 300ms;
+    background-color: hsl(214, 75%, 52%);
+}
+
+button.bttn-cancel {
+    font-family: var(--font1);
+    color: var(--n-Desaturated-blue);
+    margin: 1rem 0px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
